@@ -3,13 +3,14 @@
 <suite verbose="0" name="Failed suite [Command line suite]">
   <test thread-count="5" verbose="0" name="Command line test(failed)">
     <classes>
-      <class name="cart.test.caseOneTest">
+      <class name="cart.test.AddToCartTest">
         <methods>
+          <include name="testcase2"/>
           <include name="beforeTest"/>
+          <include name="afterSuite"/>
           <include name="testcase"/>
-          <include name="afterTest"/>
         </methods>
-      </class> <!-- cart.test.caseOneTest -->
+      </class> <!-- cart.test.AddToCartTest -->
     </classes>
   </test> <!-- Command line test(failed) -->
 </suite> <!-- Failed suite [Command line suite] -->

@@ -25,6 +25,12 @@ public class TestCaseOne {
 	@FindBy(xpath="//button[@class='_23FHuj'][2]")
 	WebElement addMore;
 	
+	@FindBy(xpath="//div[@class='_30jeq3 _16Jk6d']")
+	WebElement amount;
+	
+	@FindBy(xpath="//input[@class='_253qQJ']")
+	WebElement countItems;
+	
 	public WebElement title()
 	{
 		return title;
@@ -43,5 +49,15 @@ public class TestCaseOne {
 	public WebElement addMore()
 	{
 		return addMore;
+	}
+	
+	public WebElement amount()
+	{
+		return amount;
+	}
+	
+	public WebElement countItems()
+	{
+		return countItems;
 	}
 }
