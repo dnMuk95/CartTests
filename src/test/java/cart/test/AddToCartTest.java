@@ -62,6 +62,10 @@ public class AddToCartTest extends Setup{
 	public void testcase3()
 	{
 		//Verify the amount calculated after adding items.
+		t = new TestCaseOne(driver);
+		t.removeItems().click();
+		t.removeEvent().click();
+		System.out.println("All items removed successfully");
 	}
 	
 	public int calculateAmount()

@@ -31,6 +31,12 @@ public class TestCaseOne {
 	@FindBy(xpath="//input[@class='_253qQJ']")
 	WebElement countItems;
 	
+	@FindBy(xpath="//div[@class='_3dsJAO'][contains(text(),'Remove')]")
+	WebElement removeItems;
+	
+	@FindBy(xpath="//div[@class='_3dsJAO _24d-qY FhkMJZ']")
+	WebElement removeEvent;
+	
 	public WebElement title()
 	{
 		return title;
@@ -59,5 +65,15 @@ public class TestCaseOne {
 	public WebElement countItems()
 	{
 		return countItems;
+	}
+	
+	public WebElement removeItems()
+	{
+		return removeItems;
+	}
+	
+	public WebElement removeEvent()
+	{
+		return removeEvent;
 	}
 }
