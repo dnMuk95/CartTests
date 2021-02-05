@@ -1,25 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="49856" started-at="2021-02-05T10:34:01 IST" finished-at="2021-02-05T10:34:51 IST">
+  <suite name="Command line suite" duration-ms="35645" started-at="2021-02-05T11:56:12 IST" finished-at="2021-02-05T11:56:48 IST">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="49856" started-at="2021-02-05T10:34:01 IST" finished-at="2021-02-05T10:34:51 IST">
-      <class name="cart.test.caseOneTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cart.test.caseOneTest@77cd7a0]" name="beforeTest" is-config="true" duration-ms="24234" started-at="2021-02-05T10:34:01 IST" finished-at="2021-02-05T10:34:25 IST">
+    <test name="Command line test" duration-ms="35645" started-at="2021-02-05T11:56:12 IST" finished-at="2021-02-05T11:56:48 IST">
+      <class name="cart.test.AddToCartTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:cart.test.AddToCartTest@e25b2fe]" name="beforeTest" is-config="true" duration-ms="10755" started-at="2021-02-05T11:56:12 IST" finished-at="2021-02-05T11:56:23 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testcase()[pri:0, instance:cart.test.caseOneTest@77cd7a0]" name="testcase" duration-ms="25342" started-at="2021-02-05T10:34:25 IST" finished-at="2021-02-05T10:34:50 IST">
+        <test-method status="PASS" signature="testcase()[pri:0, instance:cart.test.AddToCartTest@e25b2fe]" name="testcase" duration-ms="20648" started-at="2021-02-05T11:56:23 IST" finished-at="2021-02-05T11:56:44 IST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testcase -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:cart.test.caseOneTest@77cd7a0]" name="afterTest" is-config="true" duration-ms="121" started-at="2021-02-05T10:34:50 IST" finished-at="2021-02-05T10:34:51 IST">
+        <test-method status="PASS" signature="testcase2()[pri:0, instance:cart.test.AddToCartTest@e25b2fe]" name="testcase2" duration-ms="4142" started-at="2021-02-05T11:56:44 IST" depends-on-methods="cart.test.AddToCartTest.testcase" finished-at="2021-02-05T11:56:48 IST">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- afterTest -->
-      </class> <!-- cart.test.caseOneTest -->
+        </test-method> <!-- testcase2 -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:cart.test.AddToCartTest@e25b2fe]" name="afterSuite" is-config="true" duration-ms="742" started-at="2021-02-05T11:56:48 IST" finished-at="2021-02-05T11:56:49 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- cart.test.AddToCartTest -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>

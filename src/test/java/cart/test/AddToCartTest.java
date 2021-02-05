@@ -11,14 +11,15 @@ import cart.base.*;
 
 //Test case 1 >> Add one item to the cart and verify.
 
-public class caseOneTest extends Setup{
+public class AddToCartTest extends Setup{
 
+	TestCaseOne t;
 	@Override
 	@Test
 	public void testcase() throws Exception{
 		//Verify that user logins successfully.
 		Thread.sleep(7000);
-		TestCaseOne t = new TestCaseOne(driver);
+		t = new TestCaseOne(driver);
 		String name = t.title().getText();
 		Assert.assertEquals(name, "Mukta");
 		
@@ -43,5 +44,12 @@ public class caseOneTest extends Setup{
 		Thread.sleep(4000);
 	}
 
-	
+	@Test(dependsOnMethods = "testcase")
+	public void testcase2() throws InterruptedException
+	{
+		//Increase the quantity of the item from the cart and verify.
+		t = new TestCaseOne(driver);
+		t.addMore().click();
+		Thread.sleep(4000);
+	}
 }

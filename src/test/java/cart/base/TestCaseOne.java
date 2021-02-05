@@ -22,6 +22,9 @@ public class TestCaseOne {
 	@FindBy(xpath="//button[@class='_2KpZ6l _2U9uOA _3v1-ww']")
 	WebElement addToCart;
 	
+	@FindBy(xpath="//button[@class='_23FHuj'][2]")
+	WebElement addMore;
+	
 	public WebElement title()
 	{
 		return title;
@@ -35,5 +38,10 @@ public class TestCaseOne {
 	public WebElement addToCart()
 	{
 		return addToCart;
+	}
+	
+	public WebElement addMore()
+	{
+		return addMore;
 	}
 }

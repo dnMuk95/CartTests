@@ -4,7 +4,7 @@ import java.util.Iterator;
 import java.util.Set;
 
 import org.openqa.selenium.WebDriver;
-import org.testng.annotations.AfterTest;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
@@ -39,10 +39,10 @@ public abstract class Setup extends Initialization{
 		login.loginbtn().click();
 	}
 	
-	@AfterTest
-	public void afterTest()
+	@AfterSuite
+	public void afterSuite()
 	{
-		driver.close();
+		driver.quit();
 	}
 	
 	public WebDriver windows()
